@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <p>Choos The Toss</p>
+    <button onclick="
+    const r=Math.random();
+    let c=''
+    if(0<=r && r<0.5){
+        c='Heads'
+    }
+    else if(0.5<=r && r<=1){
+        c='Tails'
+    }
+    let result=''
+    if(c==='Heads'){
+        result='You Won The Toss'
+    }
+    else if(c==='Tails'){
+        result='You Lost The Toss'
+    }
+    alert(`You choos Heads, ${result}`)
+    ">Heads</button>
+    <button onclick="
+    const r=Math.random();
+    let c=''
+    if(0<=r && r<0.5){
+        c='Heads'
+    }
+    else if(0.5<=r && r<=1){
+        c='Tails'
+    }
+    let result=''
+    if(c==='Heads'){
+        result='You Lost The Toss'
+    }
+    else if(c==='Tails'){
+        result='You Won The Toss'
+    }
+    alert(`You choos Tails, ${result}`)
+    ">Tails</button>
+    </center>
+    <script>
+        function add(){
+            
+        }
+
+    </script>
+</body>
+</html>
