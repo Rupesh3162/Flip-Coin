@@ -2,11 +2,11 @@ function add(){
             
 }
 function btn1(){
-const r=Math.random();
-            let resultss={
-                Heads:0,
-                Tails:0
-            };
+    const r=Math.random();
+    let resultss={
+        Heads:0,
+        Tails:0
+        };
  let c='';
     if(0<=r && r<0.5){
         c='Heads'
@@ -16,7 +16,7 @@ const r=Math.random();
     }
     let result=''
     if(c==='Heads'){
-        result='You Won The Toss'
+        result='You Won The Toss' 
         resultss.Heads++;
     }
     else if(c==='Tails'){
