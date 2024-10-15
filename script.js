@@ -23,10 +23,12 @@ function btn1(){
         result='You Lost The Toss'
         resultss.Tails++;
     }
-    alert(`You choos Heads, ${result}
-    Won Toss ${resultss.Heads} , Losses Toss ${resultss.Tails}`)
-    
+    document.querySelector('.score-display1')
+        .innerHTML=`You choos Heads, ${result}`;
+    document.querySelector('.score-display2')
+        .innerHTML=`Won Toss ${resultss.Heads} , Losses Toss ${resultss.Tails}`
 }
+    
 function btn2(){
     const r=Math.random();
     let score={
@@ -49,6 +51,8 @@ function btn2(){
         result='You Won The Toss'
         score.Tails++;
     }
-    alert(`You choos Tails, ${result}
-Won Toss ${score.Tails} , Losses Toss ${score.Heads}`)
+    document.querySelector('.score-display2')
+        .innerHTML=`You choos Heads, ${result}`;
+    document.querySelector('.score-display2')
+        .innerHTML=`Won Toss ${score.Tails} , Losses Toss ${score.Heads}`
 }
